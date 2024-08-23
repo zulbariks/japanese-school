@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="images/navbar.png " rel="icon" />
+    <title>SMA HSI-IDN</title>
+    <style>
+      * {
+        font-family: Poppins;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <nav class="w-full bg-[#2a3641]">
+      <div class="container flex gap-3 items-center">
+        <div class="logo px-2">
+          <h1 class="font-bold text-white">
+            HSI<span class="text-blue-600">IDN</span>
+          </h1>
+        </div>
+        <div class="garis absolute right-0 top-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="#ffffff"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </nav> -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            <li><a>Home</a></li>
+            <!-- <li>
+              <a>Parent</a>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </li> -->
+            <li><a>About</a></li>
+            <li><a>Our Galery</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl text-white"
+          >HSI <span class="text-blue-700">IDN</span></a
+        >
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li>
+            <!-- <details>
+              <summary>Parent</summary>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details> -->
+          </li>
+          <li><a>About</a></li>
+          <li><a>Our Galery</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn bg-[#10171D] hover:bg-[#1d2730]">Daftar Sekarang</a>
+      </div>
+    </div>
+
+    <section
+      id="hero"
+      class="flex bg-[url('./images/heroo.png')] h-full w-full bg-no-repeat relative"
+    >
+      <div
+        class="w-full h-full bg-[#10171D] bg-opacity-70 md:bg-opacity-100 absolute z-2"
+      ></div>
+      <div
+        class="container mx-auto gap-3 flex flex-col-reverse md:flex-row px-4 py-10 items-center md:justify-center z-10"
+      >
+        <div class="title h-full w-full gap-6 max-w-md md:pt-16">
+          <button
+            class="text-white text-[14px] bg-[#2a3641] rounded-full font-thin py-1 px-2 w-fit hidden md:flex items-center mb-3"
+          >
+            Haii Students 👨🏼‍🎓👩🏼‍🎓
+          </button>
+
+          <h1 class="text-4xl font-bold">
+            Welcome to Website SMK Mangcoding Belajar
+          </h1>
+          <p class="py-6 font-light">
+            Making someone a reliable programmer and having the ability to
+            become a successful person will be.
+          </p>
+          <h2 class="pt-6 text-sm text-white font-light">Annoucement</h2>
+          <p class="py-1 text-xs">
+            We make a new Registration!!, for those who want to register for SMK
+            Mangcoding can come directly to the Location
+          </p>
+        </div>
+      </div>
+      <div class="hero-image hidden md:block z-20">
+        <img src="images/hero.png" alt="" class="w-full h-full" />
+      </div>
+    </section>
+
+    <section>
+      <div class="hero min-h-full">
+        <div class="hero-content flex-col lg:flex-row-reverse r">
+          <img
+            src="images/sekolah.png"
+            class="max-w-sm rounded-lg shadow-2xl"
+          />
+          <div>
+            <h1 class="text-5xl font-bold">SMK Mangcoding belajar</h1>
+            <p class="py-6">
+              Video detail SMK Mangcoding Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
