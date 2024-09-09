@@ -1,3 +1,22 @@
+<?php
+
+
+require 'koneksi.php';
+
+$posts = getdata("SELECT * FROM artikels limit 6");
+
+// var_dump($posts);
+
+?>
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -194,6 +213,7 @@
     </section>
 
     <section id="news" class="w-full">
+   
       <div class="container mx-auto py-12 px-6">
         <div class="md:max-w-[354px] mb-5">
           <h2 class="text-lg md:text-[40px] pt-5 font-bold text-[#0E1422]">
@@ -204,9 +224,11 @@
             PURWOREJO
           </p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <?php foreach($posts as $pots): ?>
           <!-- Card 1 -->
-          <div class="relative rounded overflow-hidden shadow-lg">
+          <div class="relative rounded overflow-hidden shadow-lg bg-red-400">
+            
             <img
               class="w-full h-64 object-cover hover:transform transition duration-500 hover:scale-110"
               src="images/satu (1).png"
@@ -216,10 +238,10 @@
               class="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-60 p-4 text-white"
             >
               <a href="news1.html" class="hover:underline">
-                <h2 class="text-lg font-bold">Learning in House</h2>
-                <p class="text-sm mt-2">
-                  Lorem ipsum dolor sit amet, consectetur Maecenas et velit sem
-                  belajar dirumah online.
+                <h2 class="text-lg font-bold"> <?= $pots["title"]?> </h2>
+                
+                <p class="text-sm mt-2 truncate">
+                  <?= $pots["content"]?>
                 </p>
                 <div class="flex justify-between items-center mt-4 text-sm">
                   <span>20 Juni 2022</span>
@@ -228,9 +250,11 @@
               </a>
             </div>
           </div>
+          <?php endforeach;?>
+
 
           <!-- Card 2 -->
-          <div class="relative rounded overflow-hidden shadow-lg">
+          <!-- <div class="relative rounded overflow-hidden shadow-lg">
             <img
               class="w-full h-64 object-cover transform transition duration-500 hover:scale-110"
               src="images/satu (2).png"
@@ -253,10 +277,10 @@
                 </div>
               </a>
             </div>
-          </div>
+          </div> -->
 
           <!-- Card 3 -->
-          <div class="relative rounded overflow-hidden shadow-lg">
+          <!-- <div class="relative rounded overflow-hidden shadow-lg">
             <img
               class="w-full h-64 object-cover transform transition duration-500 hover:scale-110"
               src="images/satu (3).png"
@@ -277,10 +301,10 @@
                 </div>
               </a>
             </div>
-          </div>
+          </div> -->
 
           <!-- Card 4 -->
-          <div class="relative rounded overflow-hidden shadow-lg">
+          <!-- <div class="relative rounded overflow-hidden shadow-lg">
             <img
               class="w-full h-64 object-cover transform transition duration-500 hover:scale-110"
               src="images/satu (4).png"
@@ -301,10 +325,10 @@
                 </div>
               </a>
             </div>
-          </div>
+          </div> -->
 
           <!-- Card 5 -->
-          <div class="relative rounded overflow-hidden shadow-lg">
+          <!-- <div class="relative rounded overflow-hidden shadow-lg">
             <img
               class="w-full h-64 object-cover transform transition duration-500 hover:scale-110"
               src="images/satu (5).png"
@@ -325,10 +349,10 @@
                 </div>
               </a>
             </div>
-          </div>
+          </div> -->
 
           <!-- Card 6 -->
-          <div class="relative rounded overflow-hidden shadow-lg">
+          <!-- <div class="relative rounded overflow-hidden shadow-lg">
             <img
               class="w-full h-64 object-cover transform transition duration-500 hover:scale-110"
               src="images/satu (6).png"
@@ -349,7 +373,7 @@
                 </div>
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <!-- Button -->
