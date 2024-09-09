@@ -34,57 +34,65 @@
     </style>
   </head>
   <body>
-    <div class="navbar bg-base-100 fixed z-50">
-      <div class="navbar-start">
-        <div class="dropdown z-50">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
-            <li><a href="#home">Home</a></li>
-            <li><a href="#patner">Company Partner</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#kata">Quotes</a></li>
-            <li><a href="#galeri">Our Galery</a></li>
-          </ul>
-        </div>
-        <a class="btn btn-ghost text-xl text-white"
-          >HSI <span class="text-blue-700">IDN</span></a
-        >
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#patner">Company Partner</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#kata">Quotes</a></li>
-          <li><a href="#galeri"> Our Galery</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <a class="btn bg-[#10171D] hover:bg-[#1d2730]">Daftar Sekarang</a>
-      </div>
-    </div>
+    <!-- navbar nyoba -->
+    <nav class="bg-[#1a2025] p-4 fixed z-50 w-full">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="" class="text-white text-2xl font-bold">HSIIDN</a>
 
-    <div class="h-[30px]"></div>
+        <!-- Hamburger Icon (Mobile) -->
+        <button
+          id="menu-btn"
+          class="text-white block md:hidden focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+
+        <!-- Menu (hidden on mobile) -->
+        <div id="menu" class="hidden md:flex space-x-4">
+          <a href="#home" class="text-white hover:text-gray-200">Home</a>
+          <a href="#patner" class="text-white hover:text-gray-200"
+            >Companny Patner</a
+          >
+          <a href="#about" class="text-white hover:text-gray-200">About</a>
+          <a href="#news" class="text-white hover:text-gray-200">News</a>
+          <a href="#kata" class="text-white hover:text-gray-200">Quotes</a>
+          <a href="#galeri" class="text-white hover:text-gray-200"
+            >Our Gallery</a
+          >
+        </div>
+      </div>
+
+      <!-- Mobile Menu (shown when clicked on hamburger) -->
+      <div
+        id="mobile-menu"
+        class="md:hidden flex flex-col space-y-4 mt-4 p-4 bg-[#1a2025]"
+      >
+        <a href="#home" class="text-white hover:text-gray-200">Home</a>
+        <a href="#patner" class="text-white hover:text-gray-200"
+          >Companny Patner</a
+        >
+        <a href="#about" class="text-white hover:text-gray-200">About</a>
+        <a href="#news" class="text-white hover:text-gray-200">News</a>
+        <a href="#kata" class="text-white hover:text-gray-200">Quotes</a>
+        <a href="#galeri" class="text-white hover:text-gray-200">Our Gallery</a>
+      </div>
+    </nav>
+
+    <div class="w-full h-16"></div>
 
     <section
       id="home"
@@ -145,7 +153,7 @@
       </div>
     </section>
 
-    <section class="flex">
+    <section class="flex" id="about">
       <div
         class="container mt-10 mx-auto px-2 md:px-3 justify-around items-center gap-7 md:flex md:flex-row-reverse"
       >
@@ -165,7 +173,7 @@
         </div>
       </div>
     </section>
-    <section id="about" class="flex mt-10">
+    <section class="flex mt-10">
       <div
         class="container mt-10 mx-auto px-2 md:px-3 justify-around items-center gap-7 md:flex"
       >
@@ -207,15 +215,17 @@
             <div
               class="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-60 p-4 text-white"
             >
-              <h2 class="text-lg font-bold">Learning in House</h2>
-              <p class="text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur Maecenas et velit sem
-                belajar dirumah online.
-              </p>
-              <div class="flex justify-between items-center mt-4 text-sm">
-                <span>20 Juni 2022</span>
-                <span>Arsail12</span>
-              </div>
+              <a href="news1.html" class="hover:underline">
+                <h2 class="text-lg font-bold">Learning in House</h2>
+                <p class="text-sm mt-2">
+                  Lorem ipsum dolor sit amet, consectetur Maecenas et velit sem
+                  belajar dirumah online.
+                </p>
+                <div class="flex justify-between items-center mt-4 text-sm">
+                  <span>20 Juni 2022</span>
+                  <span>Arsail12</span>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -229,17 +239,19 @@
             <div
               class="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-60 p-4 text-white"
             >
-              <h2 class="text-lg font-bold">
-                Being An Important Person For People
-              </h2>
-              <p class="text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur Maecenas et velit sem
-                belajar dirumah online.
-              </p>
-              <div class="flex justify-between items-center mt-4 text-sm">
-                <span>20 Juni 2022</span>
-                <span>Arsail12</span>
-              </div>
+              <a href="news2.html" class="hover:underline">
+                <h2 class="text-lg font-bold">
+                  Being An Important Person For People
+                </h2>
+                <p class="text-sm mt-2">
+                  Lorem ipsum dolor sit amet, consectetur Maecenas et velit sem
+                  belajar dirumah online.
+                </p>
+                <div class="flex justify-between items-center mt-4 text-sm">
+                  <span>20 Juni 2022</span>
+                  <span>Arsail12</span>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -253,15 +265,17 @@
             <div
               class="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-60 p-4 text-white"
             >
-              <h2 class="text-lg font-bold">Study Group</h2>
-              <p class="text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur Maecenas et velit sem
-                belajar dirumah online.
-              </p>
-              <div class="flex justify-between items-center mt-4 text-sm">
-                <span>20 Juni 2022</span>
-                <span>Purny Od.</span>
-              </div>
+              <a href="news3.html" class="hover:underline">
+                <h2 class="text-lg font-bold">Study Group</h2>
+                <p class="text-sm mt-2">
+                  Lorem ipsum dolor sit amet, consectetur Maecenas et velit sem
+                  belajar dirumah online.
+                </p>
+                <div class="flex justify-between items-center mt-4 text-sm">
+                  <span>20 Juni 2022</span>
+                  <span>Purny Od.</span>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -275,15 +289,17 @@
             <div
               class="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-60 p-4 text-white"
             >
-              <h2 class="text-lg font-bold">Study in Class</h2>
-              <p class="text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur Maecenas et velit sem
-                belajar dirumah online.
-              </p>
-              <div class="flex justify-between items-center mt-4 text-sm">
-                <span>20 Juni 2022</span>
-                <span>Arsail12</span>
-              </div>
+              <a href="news4.html" class="hover:underline">
+                <h2 class="text-lg font-bold">Study in Class</h2>
+                <p class="text-sm mt-2">
+                  Lorem ipsum dolor sit amet, consectetur Maecenas et velit sem
+                  belajar dirumah online.
+                </p>
+                <div class="flex justify-between items-center mt-4 text-sm">
+                  <span>20 Juni 2022</span>
+                  <span>Arsail12</span>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -297,15 +313,17 @@
             <div
               class="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-60 p-4 text-white"
             >
-              <h2 class="text-lg font-bold">Study in House</h2>
-              <p class="text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur Maecenas et velit sem
-                belajar dirumah online.
-              </p>
-              <div class="flex justify-between items-center mt-4 text-sm">
-                <span>20 Juni 2022</span>
-                <span>Admin12</span>
-              </div>
+              <a href="news5.html" class="hover:underline">
+                <h2 class="text-lg font-bold">Study in House</h2>
+                <p class="text-sm mt-2">
+                  Lorem ipsum dolor sit amet, consectetur Maecenas et velit sem
+                  belajar dirumah online.
+                </p>
+                <div class="flex justify-between items-center mt-4 text-sm">
+                  <span>20 Juni 2022</span>
+                  <span>Admin12</span>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -319,15 +337,17 @@
             <div
               class="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-60 p-4 text-white"
             >
-              <h2 class="text-lg font-bold">Study With my Friend</h2>
-              <p class="text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur Maecenas et velit sem
-                belajar dirumah online.
-              </p>
-              <div class="flex justify-between items-center mt-4 text-sm">
-                <span>20 Juni 2022</span>
-                <span>Admin12</span>
-              </div>
+              <a href="news6.html" class="hover:underline">
+                <h2 class="text-lg font-bold">Study With my Friend</h2>
+                <p class="text-sm mt-2">
+                  Lorem ipsum dolor sit amet, consectetur Maecenas et velit sem
+                  belajar dirumah online.
+                </p>
+                <div class="flex justify-between items-center mt-4 text-sm">
+                  <span>20 Juni 2022</span>
+                  <span>Admin12</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -553,4 +573,13 @@
       </div>
     </footer>
   </body>
+  <script>
+    // Toggle mobile menu
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 </html>

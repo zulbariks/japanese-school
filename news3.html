@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="icon" href="images/navbar.png" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav class="bg-[#1a2025] p-4 fixed w-full">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="" class="text-white text-2xl font-bold">HSIIDN</a>
+
+        <!-- Hamburger Icon (Mobile) -->
+        <button
+          id="menu-btn"
+          class="text-white block md:hidden focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+
+        <!-- Menu (hidden on mobile) -->
+        <div id="menu" class="hidden md:flex space-x-4">
+          <a href="index.html#home" class="text-white hover:text-gray-200"
+            >Home</a
+          >
+          <a href="index.html#patner" class="text-white hover:text-gray-200"
+            >Companny Patner</a
+          >
+          <a href="index.html#about" class="text-white hover:text-gray-200"
+            >About</a
+          >
+          <a href="index.html#news" class="text-white hover:text-gray-200"
+            >News</a
+          >
+          <a href="index.html#quotes" class="text-white hover:text-gray-200"
+            >Quotes</a
+          >
+          <a href="index.html#galeri" class="text-white hover:text-gray-200"
+            >Our Gallery</a
+          >
+        </div>
+      </div>
+
+      <!-- Mobile Menu (shown when clicked on hamburger) -->
+      <div
+        id="mobile-menu"
+        class="md:hidden flex flex-col space-y-4 mt-4 p-4 bg-[#1a2025]"
+      >
+        <a href="index.html#home" class="text-white hover:text-gray-200"
+          >Home</a
+        >
+        <a href="index.html#patner" class="text-white hover:text-gray-200"
+          >Companny Patner</a
+        >
+        <a href="index.html#about" class="text-white hover:text-gray-200"
+          >About</a
+        >
+        <a href="index.html#news" class="text-white hover:text-gray-200"
+          >News</a
+        >
+        <a href="index.html#kata" class="text-white hover:text-gray-200"
+          >Quotes</a
+        >
+        <a href="index.html#galeri" class="text-white hover:text-gray-200"
+          >Our Gallery</a
+        >
+      </div>
+    </nav>
+
+    <!-- <section class="flex justify-center">
+      <a
+        href="#"
+        class="flex flex-col items-center justify-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+      >
+        <img
+          class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+          src="images/satu (1).png"
+          alt=""
+        />
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
+            Noteworthy technology acquisitions 2021
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Here are the biggest enterprise technology acquisitions of 2021 so
+            far, in reverse chronological order.
+          </p>
+        </div>
+      </a>
+    </section> -->
+
+    <section class="bg-blue-900 text-white py-20 px-6">
+      <div
+        class="container mx-auto flex flex-col items-center justify-center md:flex-row"
+      >
+        <!-- Hero Text -->
+        <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-center">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+            Selamat Datang di Blog Sekolah Kami
+          </h1>
+          <p class="mt-4 text-lg md:text-xl">
+            Pendidikan terbaik untuk generasi masa depan.
+          </p>
+          <p class="mt-1 text-lg md:text-xl">Jago IT Pinter Ngaji.</p>
+          <a
+            href="#about"
+            class="mt-6 inline-block bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-6 rounded-full transition duration-300"
+          >
+            Pelajari Lebih Lanjut
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white text-blue-900 py-20 px-6">
+      <div
+        class="container mx-auto flex flex-col items-center justify-center md:flex-row gap-6"
+      >
+        <!-- Hero Image -->
+        <div class="md:w-1/3">
+          <img
+            src="images/satu (3).png"
+            alt="Sekolah"
+            class="w-full rounded-lg shadow-lg"
+          />
+          <p class="text-2xl font-bold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe esse,
+            voluptate numquam quis sint tempora?
+          </p>
+        </div>
+        <!-- Hero Text -->
+        <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-center">
+          <!-- <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+            Selamat Datang di Blog Sekolah Kami
+          </h1> -->
+          <p class="mt-4 text-lg md:text-xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic natus
+            tempore facere temporibus velit cum, minima similique in nobis Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum
+            numquam autem placeat necessitatibus illum vel velit eaque, soluta a
+            pariatur quia obcaecati quam, quas laboriosam. Deleniti libero, iure
+            perspiciatis numquam explicabo dolorem, voluptatem corporis,
+            perferendis autem sunt neque modi! Voluptates eum adipisci soluta
+            animi nostrum, qui sapiente accusantium cupiditate eius?
+            Consequuntur ab eaque hic, reiciendis exercitationem id consequatur?
+            Tempora adipisci nesciunt eius natus voluptates quod pariatur ipsa
+            blanditiis nam.
+          </p>
+          <br />
+          <p class="mt-1 text-lg md:text-xl">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Dignissimos, recusandae. Esse perferendis provident eum odio impedit
+            voluptatem quo aperiam velit blanditiis tenetur corporis quas earum
+            minima, cum a quia doloremque voluptates corrupti, nihil iure
+            voluptas quos? Corporis hic laboriosam vitae tempora, ea sed nulla.
+            At!
+          </p>
+          <!-- <a
+            href="#about"
+            class="mt-6 inline-block bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-6 rounded-full transition duration-300"
+          >
+            Pelajari Lebih Lanjut
+          </a> -->
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    // Toggle mobile menu
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</html>
